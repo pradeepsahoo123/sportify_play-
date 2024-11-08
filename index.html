@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Spotify Music Player</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; flex-direction: column; align-items: center; }
+    #track-info { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <h2>Spotify Music Player</h2>
+  <input type="text" id="track-search" placeholder="Search for a track">
+  <button onclick="searchTrack()">Search</button>
+  
+  <div id="track-info">
+    <p id="track-name">Track Name: </p>
+    <p id="artist-name">Artist: </p>
+  </div>
+
+  <button onclick="playTrack()">Play Track</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
